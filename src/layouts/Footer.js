@@ -8,8 +8,7 @@ const Footer = () => {
           <img src="https://i.postimg.cc/YSC1hP4R/Whitelogo.png" alt="Whitelogo" />
       </a>
       <div className="links">
-        <a href="/#">Start a project</a>
-        <a href="/#">Contact Us</a>
+        <a href="mailto:contact@handsondocs.com?subject=Service%20Request">Contact us to start a project</a>
       </div>
 
       <p>FOLLOW US:</p>
@@ -17,10 +16,7 @@ const Footer = () => {
         <a href="/" target="_blank" rel="noopener noreferrer">
           <img src="https://i.postimg.cc/4xtymJPs/linkedin.png" alt="linkedin" />
         </a>
-        <a href="/" target="_blank" rel="noopener noreferrer">
-          <img src="https://i.postimg.cc/FKNSvd42/facebook.png" alt="facebook" />
-        </a>
-        <a href="/" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/handsondocs" target="_blank" rel="noopener noreferrer">
           <img src="https://i.postimg.cc/CKpyJ88n/twitter.png" alt="twitter" />
         </a>
       </div>

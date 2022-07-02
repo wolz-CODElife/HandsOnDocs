@@ -6,7 +6,7 @@ const Hero = () => {
     <HeroFrame>
         <img src="https://i.postimg.cc/G2WM53y7/lefthand.png" alt="lefthand" className='lefthand' />
         <h1>With us there’ll be no delay. <br /> You’ll have all <span>hands on doc(s)</span></h1>
-        <a href="/#">Request a document</a>
+        <a href="mailto:contact@handsondocs.com?subject=Service%20Request">Request a service</a>
         <img src="https://i.postimg.cc/m25cfcDg/righthand.png" alt="righthand" className="righthand" />
     </HeroFrame>
   )
