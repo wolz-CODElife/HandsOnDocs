@@ -10,7 +10,7 @@ const PortfolioList = () => {
           {portfolioList.map(item => (
             <div className="col" key={item.title}>
               <div className="img-cropper">
-                <img src={item.img} alt="Cover" />
+                <img src={item.img} alt={item.title} />
               </div>
               <div className="aside">
                 <div className="info">
@@ -19,7 +19,7 @@ const PortfolioList = () => {
                 </div>
                 <div className="profile">
                   <div className="author">
-                    <img src={item.author?.img} alt="Author" className='author-img'/>
+                    <img src={item.author?.img} alt={item.author.name} className='author-img'/>
                     <p>{item.author?.name}</p>
                   </div>
                   <a href={item.link} target="_blank" rel="noopener noreferrer">
