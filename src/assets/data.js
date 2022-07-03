@@ -33,3 +33,36 @@ export const InstructionList = [
         text: "Once you’ve approved on your content, our writers begin to write, edit and deliver your technical content within the expected time of delivery."
     }
 ]
+
+export const portfolioList = [
+    {
+        title: "Build a task tracker with SolidJS and TypeScript",
+        description: "Follow this step-by-step tutorial to build a web app using SolidJS.",
+        img: "https://blog.logrocket.com/wp-content/uploads/2022/06/build-task-tracker-with-solidjs-typescript-nocdn.png",
+        author: {
+            img: "https://blog.logrocket.com/wp-content/uploads/2021/10/ebenezer-don-2021-150x150.jpeg?crop=1",
+            name: "Ebenezer Don"
+        },
+        link: "https://blog.logrocket.com/build-task-tracker-solidjs-typescript/"
+    },
+    {
+        title: "Build a tracker with SolidJS and TypeScript",
+        description: "Follow this step-by-step tutorial to build a web app using SolidJS.",
+        img: "https://blog.logrocket.com/wp-content/uploads/2022/06/build-task-tracker-with-solidjs-typescript-nocdn.png",
+        author: {
+            img: "https://blog.logrocket.com/wp-content/uploads/2021/10/ebenezer-don-2021-150x150.jpeg?crop=1",
+            name: "Ebenezer Don"
+        },
+        link: "https://blog.logrocket.com/build-task-tracker-solidjs-typescript/"
+    },
+    {
+        title: "Build a tracker SolidJS and TypeScript",
+        description: "Follow this step-by-step tutorial to build a web app using SolidJS.",
+        img: "https://blog.logrocket.com/wp-content/uploads/2022/06/build-task-tracker-with-solidjs-typescript-nocdn.png",
+        author: {
+            img: "https://blog.logrocket.com/wp-content/uploads/2021/10/ebenezer-don-2021-150x150.jpeg?crop=1",
+            name: "Ebenezer Don"
+        },
+        link: "https://blog.logrocket.com/build-task-tracker-solidjs-typescript/"
+    }
+]

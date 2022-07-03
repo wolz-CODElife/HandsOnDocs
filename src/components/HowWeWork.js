@@ -28,6 +28,19 @@ const HowWeWorkFrame = styled.div`
     padding: 120px 220px;
     min-height: 564px;
 
+    @media (max-width: 920px) {
+        padding: 100px 100px;
+    }
+
+    @media (max-width: 680px) {
+        padding: 100px 100px;
+        padding-bottom: 0px;
+    }
+
+    @media (max-width: 550px) {
+        padding: 100px 30px;
+    }
+
     h1 {
         color: #3E39EC;
         text-align: left;
@@ -38,6 +51,10 @@ const HowWeWorkFrame = styled.div`
         width: 750px;
         max-width: 80%;
         position: relative;
+
+        @media (max-width: 680px) {
+            max-width: 100%;
+        }
         
         .grid {
             display: grid;
@@ -56,6 +73,10 @@ const HowWeWorkFrame = styled.div`
                     font-size: 24px;
                 }
             }
+
+            @media (max-width: 680px) {
+                margin-bottom: 0px;
+            }
         }
 
         .hand {
@@ -65,6 +86,13 @@ const HowWeWorkFrame = styled.div`
             width: 130px;
             height: 300px;
             object-fit: contain;
+
+            @media (max-width: 680px) {
+                position: relative;
+                height: 135px;
+                width: 55px;
+                left: 80%;
+            }
         }
     }
 `

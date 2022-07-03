@@ -6,7 +6,7 @@ const About = () => {
     <AboutFrame>
         <h1>Who we are</h1>
         <p>Software engineering and technical writing under one roof. HandsOnDocs is a team of technical writers that specialise in creating high-quality technical contents. You may know us by our past works.</p>
-        <a href="/#">View Portfolio</a>
+        <a href="/portfolio">View Portfolio</a>
     </AboutFrame>
   )
 }
@@ -19,6 +19,11 @@ const AboutFrame = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 564px;
+
+    @media (max-width: 800px) {
+        min-height: max-content;
+        padding: 70px 0px;
+    }
 
     h1 {
         color: #3E39EC;

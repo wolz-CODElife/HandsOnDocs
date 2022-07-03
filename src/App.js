@@ -23,4 +23,8 @@ export default App
 const HeaderSpace = styled.div`
   height: 165px;
   width: 100%;
+
+  @media (max-width: 680px) {
+    height: 90px;
+  }
 `

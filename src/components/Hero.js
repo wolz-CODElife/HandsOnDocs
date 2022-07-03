@@ -24,13 +24,29 @@ const HeroFrame = styled.div`
     position: relative;
     height: calc(100vh - 165px);
 
+    @media (max-width: 1400px) {
+        height: max-content;
+        padding: 200px 0px;
+    }
+
+    @media (max-width: 500px) {
+        padding: 100px 30px;
+    }
+
     h1 {
-        width: 700px;
         text-align: center;
         color: #FFFFFF;
 
         span {
             color: #3E39EC;
+        }
+
+        @media (max-width: 1200px) {
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+            font-size: 1.5rem;
         }
     }
 
@@ -53,10 +69,37 @@ const HeroFrame = styled.div`
     .lefthand {
         position: absolute;
         left: 0px;
+        width: 30%;
+        object-fit: contain;
+        transition: ease-in-out 0.4s; 
+
+        @media (max-width: 1100px) {
+            width: 20%;
+        }
+
+        @media (max-width: 750px) {
+            bottom: 30px;
+            width: 30%;
+        }
+
+        @media (max-width: 360px) {
+            bottom: 0px;
+        }
     }
 
     .righthand {
         position: absolute;
-        right: -5%;
+        right: 0px;
+        width: 30%;
+        object-fit: contain;
+        transition: ease-in-out 0.4s; 
+
+        @media (max-width: 1100px) {
+            width: 20%;
+        }
+
+        @media (max-width: 750px) {
+            display: none;
+        }
     }
 `

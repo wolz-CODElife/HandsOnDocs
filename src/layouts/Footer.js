@@ -8,7 +8,7 @@ const Footer = () => {
           <img src="https://i.postimg.cc/YSC1hP4R/Whitelogo.png" alt="Whitelogo" />
       </a>
       <div className="links">
-        <a href="mailto:contact@handsondocs.com?subject=Service%20Request">Contact us to start a project</a>
+        <a href="mailto:contact@handsondocs.com?subject=Service%20Request">Start a project</a>
       </div>
 
       <p>FOLLOW US:</p>
@@ -29,6 +29,10 @@ export default Footer
 const FooterFrame = styled.div`
   background: #3E39EA;
   padding: 58px 66px;
+
+  @media (max-width: 680px) {
+    padding: 29px 33px;
+  }
 
   .logo {
       img {

@@ -1,18 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
 import { servicesList } from '../assets/data'
+import SingleService from './SingleService'
 
 const Services = () => {
+    const [currentSlide, setCurrentSlide] = useState("Product Documentations")
   return (
     <ServicesFrame>
         <h1>What we can do for you</h1>
         <div className="grid">
             {servicesList.map(service => (
-                <div className="col" key={service.title}>
-                    <img src={service.icon} alt={service.title} />
-                    <h1>{service.title}</h1>
-                    <p>{service.text}</p>
-                </div>
+                <SingleService key={service.title} service={service} updateCurrentSlide={setCurrentSlide} currentSlide={currentSlide} />
+            ))}
+        </div>
+        <div className="points">
+            {servicesList.map(({title}) => (
+                <span key={title} className={currentSlide === title ? "active" : ""}></span>
             ))}
         </div>
     </ServicesFrame>
@@ -26,6 +29,16 @@ const ServicesFrame = styled.div`
     padding: 100px;
     min-height: 700px;
 
+    @media (max-width: 680px) {
+        padding: 50px;
+        min-height: max-content;
+    }
+
+    @media (max-width: 500px) {
+        padding: 30px;
+        min-height: max-content;
+    }
+
     h1 {
         color: #FFFFFF;
         text-align: center;
@@ -36,36 +49,45 @@ const ServicesFrame = styled.div`
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 50px;
         margin: 55px 0px;
+        
 
-        .col {
-            background: #FFFFFF;
-            box-shadow: 2px 2px 10px 0px #00000026;
-            border-radius: 10px;
-            height: 310px;
-            width: 310px;
+        @media (max-width: 1250px) {
+            max-width: 100%;
+            padding: 70px;
+            overflow-x: auto;
+        }
+
+        @media (max-width: 680px) {
+            padding: 20px;
+            margin: 25px 0px;
+        }
+
+        @media (max-width: 450px) {
+            padding: 0px;
+            grid-gap: 0px;
+            margin: 0px 0px;
+        }
+    }
+
+    .points {
+        align-items: center;
+        justify-content: center;
+        display: none;
+
+        @media (max-width: 750px) {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 30px;
+        }
 
-            img {
-                width: 70px;
-                height: 70px;
-                object-fit: contain;
-            }
 
-            h1 {
-                text-align: center;
-                color: #3E3E3E;
-                font-weight: 500;
-                font-size: 21px;
-                margin: 10px 0px;
-            }
+        span {
+            height: 10px;
+            width: 10px;
+            background: #737272;
+            margin: 0px 10px;
+            border-radius: 50%;
             
-            p {
-                color: #3E3E3E;
-                text-align: center;
+            &.active {
+                background: #FFFFFF;
             }
         }
     }
